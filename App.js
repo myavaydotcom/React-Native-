@@ -10,13 +10,13 @@ export default class App extends Component{
 
 	 componentWillMount() {
 			 firebase.initializeApp({
-    apiKey: "AIzaSyAJUnacPh6I1_7jRdMQthIo52mamNhmdmI",
-    authDomain: "authentication-96213.firebaseapp.com",
-    databaseURL: "https://authentication-96213.firebaseio.com",
-    projectId: "authentication-96213",
+    apiKey: "xxxxxxxxxxxxxxxxxxxxxxxxx",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
     storageBucket: "",
-    messagingSenderId: "159837044100",
-    appId: "1:159837044100:web:173386b67be05ec5"
+    messagingSenderId: "",
+    appId: ""
   });
 	// a new function when authentication state change mean login and logout then this method fired
 	  firebase.auth().onAuthStateChanged((user)=>{
