@@ -1,13 +1,15 @@
 import React from 'react';
 import { View , Text , StyleSheet , Image} from 'react-native';
 
- const Upper = (props)=>{
+ export default class Upper extends React.Component{
+	 render(){
 	   return(
-			   <View style = {styles.containerStyle}>
+	     <View style = {styles.containerStyle}>
                 <Image source = {props.src} style = {styles.img} />
-								<Text>{props.title} <br />{props.artist}</Text>
-				 </View>
-		 );
+                <Text>{props.title} <br />{props.artist}</Text>
+	    </View>
+		 )
+	 }
  }
 
  const styles = StyleSheet.create({
@@ -26,4 +28,4 @@ import { View , Text , StyleSheet , Image} from 'react-native';
 		 }
  });
 
-export default Upper ;
+
